@@ -73,7 +73,7 @@
         <a class="home__contact" href="#contact">Contact Me</a>
       </section>
       <!-- About -->
-      <section id="about" class="section">
+      <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
@@ -81,39 +81,62 @@
           eaque veniam dolor et cumque? Distinctio, corporis! Autem velit vero
           hic dolorem laborum rem!
         </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>Front-end</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"> </i>
+            <p class="major__title">Front-end</p>
             <p>HTML, CSS, Javascript, React, Figma</p>
           </li>
-          <li>
-            <i class="fa-solid fa-server"></i>
-            <p>Back-end</p>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
             <p>Ruby on rail, Ruby, Python, Javascript, Rest APIs</p>
           </li>
-          <li>
-            <i class="fa-solid fa-database"></i>
-            <p>Data, analysis % Workflow</p>
-            <p>SQL (MySQL, PostgreSQL), Jupyter Notebook</p>
+          <li class="major">
+            <i class="fa-solid fa-database major__icon"></i>
+            <p class="major__title">Data & Analysis Workflow</p>
+            <p>SQL, python, Jupyter Notebook</p>
           </li>
         </ul>
 
-        <ul>
-          <li>
-            <img src="images/Actualizelogo.png" alt="Actualize logo" />
-            <div><p>Certification in Full-stack Web Developement 2024</p></div>
-          </li>
-          <li>
-            <img src="images/UIClogo.png" alt="UIC logo" />
-            <p>Bachelor's degree</p>
-            <p>Information and Decision Science (MIS)</p>
-          </li>
-          <li>
-            <img src="images/meikologo.png" alt="Meiko logo" />
+        <ul class="experiences">
+          <li class="experience">
+            <img
+              class="experience__img"
+              src="images/Actualizelogo.png"
+              alt="Actualize logo"
+            />
             <div>
-              <p>Meiko America INC as Air Import Coordinator</p>
-              <p>Aug 2018 - Nov 2023</p>
+              <p class="experience__name">Actualize Coding Bootcamp</p>
+              <p class="experience__description">
+                Certification in Full-stack Web Developement 2024
+              </p>
+            </div>
+          </li>
+          <li class="experience">
+            <img
+              class="experience__img"
+              src="images/UIClogo.png"
+              alt="UIC logo"
+            />
+            <div>
+              <p class="experience__name">University of Illinois Chicago</p>
+              <p class="experience__description">
+                Bachelor's degre, Information and Decision Science (MIS)
+              </p>
+            </div>
+          </li>
+          <li class="experience">
+            <img
+              class="experience__img"
+              src="images/meikologo.png"
+              alt="Meiko logo"
+            />
+            <div>
+              <p class="experience__name">
+                Meiko America INC as Air Import Coordinator
+              </p>
+              <p class="experience__description">Aug 2018 - Nov 2023</p>
             </div>
           </li>
         </ul>
