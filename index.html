@@ -43,6 +43,7 @@
         <img class="header__log__img" src="images/favicon.ico" alt="logo" />
         <h1 class="header__logo__title"><a href="#">Jayeon</a></h1>
       </div>
+
       <nav class="header__nav">
         <ul class="header__menu">
           <li><a class="header__menu__item active" href="#home">Home</a></li>
@@ -55,6 +56,9 @@
           <li><a class="header__menu__item" ref="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Main -->
     <main>
@@ -62,16 +66,16 @@
       <section id="home" class="section">
         <div class="home__container">
           <img class="home__img" src="images/profile.png" alt="Profile" />
-        <h2 class="home__title">
-          Hello<br />
-          I&#39;m <strong class="home__title--strong">Jayeon Hwang</strong>
-        </h2>
-        <p class="home__description">
-          Frontend Engineer with a passion for creating seamless user
-          experiences. I focus on clear communication and
-          consistent,high-quality code.
-        </p>
-        <a class="home__contact" href="#contact">Contact Me</a>
+          <h2 class="home__title">
+            Hello<br />
+            I&#39;m <strong class="home__title--strong">Jayeon Hwang</strong>
+          </h2>
+          <p class="home__description">
+            Frontend Engineer with a passion for creating seamless user
+            experiences. I focus on clear communication and
+            consistent,high-quality code.
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
         </div>
       </section>
       <!-- About -->
@@ -379,29 +383,31 @@
     <footer id="contact" class="section">
       <div class="max-container">
         <h2 class="title">Let&#39;talk</h2>
-      <p class="description">jayeon512@gmail.com</p>
-      <ul class="contact__links">
-        <li>
-          <a class="contact__link"
-            href="https://github.com/jayeonhwang"
-            target="_blank"
-            title="my github link"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a class="contact__link"
-            href="https://www.linkedin.com/in/jay512/"
-            target="_blank"
-            title="my linkedin link"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-      <p>©Jayeon Hwang - All rights reserved</p>
-    </footer>
+        <p class="description">jayeon512@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/jayeonhwang"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/jay512/"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <p>©Jayeon Hwang - All rights reserved</p>
       </div>
+    </footer>
   </body>
 </html>
