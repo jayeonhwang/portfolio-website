@@ -1,5 +1,6 @@
-// Change header style when page scroll down
+'use strict';
 
+// Change header style when page scroll down
 const header = document.querySelector('.header');
 const headerHeight = header.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
