@@ -409,7 +409,7 @@ button:focus {
 .slider {
   position: relative;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -417,7 +417,7 @@ button:focus {
   display: flex;
   transition: transform 0.5s ease-in-out;
   padding: 0;
-  margin: 0;
+  margin: 8rem;
   list-style: none;
 }
 
@@ -449,8 +449,7 @@ button:focus {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: rgba(0, 0, 0, 0.5);
   border: none;
   font-size: 2rem;
   cursor: pointer;
@@ -601,8 +600,12 @@ button:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .certificate {
-    flex-direction: column;
+  .slider {
+    max-width: 100vw;
+  }
+
+  .certificates {
+    margin: 0;
   }
 
   .arrow-up {
