@@ -366,8 +366,13 @@ button:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 200ms ease-out;
 }
 
+.projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
+}
 .project {
   position: relative;
   border-radius: 8px;
@@ -401,22 +406,34 @@ button:focus {
 
 /* Certificate */
 
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: auto;
+}
+
 .certificates {
-  margin: 3rem;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .certificate {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding: 0.8rem 1.5rem;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .certificate__img {
-  width: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.1),
     0px 1px 0px 0px rgba(25, 28, 33, 0.02),
     0px 0px 0px 1px rgba(25, 28, 33, 0.08);
@@ -426,6 +443,47 @@ button:focus {
   color: var(--color-accent);
   font-weight: bold;
   filter: brightness(70%);
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Pagination dots */
+.slider-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.slider-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: none;
+  background: #bbb;
+  cursor: pointer;
+}
+
+.slider-dots button.active {
+  background: var(--color-accent, #333);
 }
 
 /* Arrow up*/

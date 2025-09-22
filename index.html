@@ -239,23 +239,23 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 All <span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="frontend">
                 Front-end <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="backend">
                 Back-end <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="frontend">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -268,7 +268,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="frontend">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -281,7 +281,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="frontend">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -294,7 +294,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="backend">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project4.webp"
@@ -307,7 +307,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="backend">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project5.webp"
@@ -327,50 +327,58 @@
       <section id="certificate" class="section max-container">
         <h2 class="title">Certificates</h2>
         <p class="description">What I learned</p>
-        <ul class="certificates">
-          <li class="certificate">
-            <img
-              class="certificate__img"
-              src="images/certificate/actualize.jpg"
-              alt="actualize"
-            />
-            <div class="certificate--container">
-              <p class="certificate--title">Actualize Coding bootcamp</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptates recusandae sed doloribus autem quidem unde
-              </p>
-            </div>
-          </li>
-          <li class="certificate">
-            <img
-              class="certificate__img"
-              src="images/certificate/python.jpg"
-              alt="python"
-            />
-            <div class="certificate--container">
-              <p class="certificate--title">Udemy Python</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptates recusandae sed doloribus autem quidem unde
-              </p>
-            </div>
-          </li>
-          <li class="certificate">
-            <img
-              class="certificate__img"
-              src="images/certificate/SQL.jpg"
-              alt="Sql"
-            />
-            <div class="certificate--container">
-              <p class="certificate--title">Udemy SQL</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptates recusandae sed doloribus autem quidem unde
-              </p>
-            </div>
-          </li>
-        </ul>
+
+        <div class="slider">
+          <ul class="certificates">
+            <li class="certificate">
+              <img
+                class="certificate__img"
+                src="images/certificate/actualize.jpg"
+                alt="actualize"
+              />
+              <div class="certificate--container">
+                <p class="certificate--title">Actualize Coding bootcamp</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptates recusandae sed doloribus autem quidem unde
+                </p>
+              </div>
+            </li>
+            <li class="certificate">
+              <img
+                class="certificate__img"
+                src="images/certificate/python.jpg"
+                alt="python"
+              />
+              <div class="certificate--container">
+                <p class="certificate--title">Udemy Python</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptates recusandae sed doloribus autem quidem unde
+                </p>
+              </div>
+            </li>
+            <li class="certificate">
+              <img
+                class="certificate__img"
+                src="images/certificate/SQL.jpg"
+                alt="Sql"
+              />
+              <div class="certificate--container">
+                <p class="certificate--title">Udemy SQL</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti voluptates recusandae sed doloribus autem quidem unde
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- Navigation buttons -->
+          <button class="slider-btn prev">‹</button>
+          <button class="slider-btn next">›</button>
+          <!-- Pagination -->
+          <div class="slider-dots"></div>
+        </div>
       </section>
 
       <!-- Arrow Up -->
