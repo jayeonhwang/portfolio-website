@@ -39,6 +39,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 
+
 let startX = 0;
 
 certificates.addEventListener('touchstart', (e) => {
