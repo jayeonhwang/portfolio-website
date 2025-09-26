@@ -193,6 +193,7 @@ button:focus {
 }
 
 .home__greeting {
+  margin-left: 3rem;
   text-align: left;
 }
 
